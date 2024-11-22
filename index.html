@@ -25,21 +25,21 @@
 
     <section id="sobre-nosotros">
         <h2>Sobre Nosotros</h2>
-        <p>Somos una empresa dedicada a prestar un servicio el cual consiste en hacer de tu empresa un lugar mas reconocido, contamos con estrategias profesionales que ayudan a promocionar tu empresa por medio de las redes sociales y medios de comunicacion. </p>
+        <p>Somos una empresa dedicada a prestar un servicio el cual consiste en hacer de tu empresa un lugar más reconocido, contamos con estrategias profesionales que ayudan a promocionar tu empresa por medio de las redes sociales y medios de comunicación. </p>
         <img src="https://media.istockphoto.com/id/1325079945/es/vector/ilustraci%C3%B3n-vectorial-del-marketing-digital-concepto-de-publicidad-dirigida-atraer-al.jpg?s=612x612&w=0&k=20&c=IpvTQ7c_oTFlZ6YGLXbXQf7UA4vVITgQCpxNUe36IrU=" alt="¡promociona tu empresa ya!">
     </section>
 
     <section id="servicios">
         <h2>Servicios</h2>
         <ul>
-            <li>contamos con un servicio de marketing digital con un precio de $300.000 </li>
+            <li>Contamos con un servicio de marketing digital con un precio de $300.000.</li>
         </ul>
     </section>
 
     <section id="reseñas">
         <h2>Lo que dicen nuestros clientes</h2>
         <div class="reseña">
-            <p>"Excelente servicio, dan estrategias de promocion muy eficaces para estos tiempos donde solo se usan redes sociales !"</p>
+            <p>"Excelente servicio, dan estrategias de promoción muy eficaces para estos tiempos donde solo se usan redes sociales!"</p>
             <span>- Cliente 1</span>
         </div>
         <div class="reseña">
@@ -57,5 +57,16 @@
     </footer>
 
     <script src="js/script.js"></script>
+
+    <script>
+        
+        const userName = localStorage.getItem('userName');
+        if (userName) {
+            const logoutLink = document.createElement('a');
+            logoutLink.href = 'login.html';
+            logoutLink.textContent = 'Cerrar sesión';
+            document.querySelector('nav ul').appendChild(logoutLink);
+        }
+    </script>
 </body>
 </html>

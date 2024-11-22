@@ -1,11 +1,11 @@
-/* Reset de márgenes y rellenos */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Tipografía y fondo general */
+
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f7fb;
@@ -13,14 +13,14 @@ body {
     line-height: 1.6;
 }
 
-/* Contenedor general */
+
 .container {
     width: 90%;
     margin: 0 auto;
     max-width: 1200px;
 }
 
-/* Navbar */
+
 nav {
     background-color: #333;
     color: #fff;
@@ -49,10 +49,10 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #00aaff; /* Color de hover */
+    color: #00aaff; 
 }
 
-/* Banner */
+
 header {
     background: linear-gradient(135deg, #0066cc, #00aaff);
     color: #fff;
@@ -76,7 +76,7 @@ header p {
     margin: 0 auto;
 }
 
-/* Sección de Servicios */
+
 #servicios {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -124,7 +124,7 @@ header p {
     color: #00aaff;
 }
 
-/* Sección de Reseñas */
+
 #reseñas {
     background-color: #f9f9f9;
     padding: 50px 0;
@@ -163,7 +163,7 @@ header p {
     color: #333;
 }
 
-/* Footer */
+
 footer {
     background-color: #333;
     color: #fff;

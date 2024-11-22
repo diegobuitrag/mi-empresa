@@ -7,7 +7,7 @@ document.getElementById('registroForm').addEventListener('submit', function (e) 
     const contrasena = document.getElementById('contrasena').value;
     const genero = document.getElementById('genero').value;
 
-    // Guardar en LocalStorage
+    
     const usuario = {
         nombres,
         apellidos,
@@ -33,8 +33,7 @@ document.getElementById('loginForm').addEventListener('submit', function (e) {
     if (usuarioGuardado && usuarioGuardado.correo === correoLogin && usuarioGuardado.contrasena === contrasenaLogin) {
         document.getElementById('mensajeLogin').textContent = '¡Inicio de sesión exitoso!';
         document.getElementById('mensajeLogin').classList.add('success');
-        localStorage.setItem('usuarioSesion', JSON.stringify(usuarioGuardado)); // Guardar usuario en sesión
-        // Redirigir a la página principal
+        localStorage.setItem('usuarioSesion', JSON.stringify(usuarioGuardado)); 
         setTimeout(() => {
             window.location.href = 'bienvenida.html';
         }, 1500);
