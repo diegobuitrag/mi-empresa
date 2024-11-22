@@ -1,27 +1,3 @@
-document.getElementById('registroForm').addEventListener('submit', function (e) {
-    e.preventDefault();
-
-    const nombres = document.getElementById('nombres').value;
-    const apellidos = document.getElementById('apellidos').value;
-    const correo = document.getElementById('correo').value;
-    const contrasena = document.getElementById('contrasena').value;
-    const genero = document.getElementById('genero').value;
-
-    // Guardar en LocalStorage
-    const usuario = {
-        nombres,
-        apellidos,
-        correo,
-        contrasena,
-        genero
-    };
-
-    localStorage.setItem('usuario', JSON.stringify(usuario));
-
-    document.getElementById('mensaje').textContent = '¡Registro exitoso! Puedes iniciar sesión ahora.';
-    document.getElementById('mensaje').classList.add('success');
-});
-
 document.getElementById('loginForm').addEventListener('submit', function (e) {
     e.preventDefault();
 

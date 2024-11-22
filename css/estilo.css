@@ -1,0 +1,197 @@
+/* Reset de márgenes y rellenos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Tipografía y fondo general */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Contenedor general */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Navbar */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 8px 20px;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #00aaff; /* Color de hover */
+}
+
+/* Banner */
+header {
+    background: linear-gradient(135deg, #0066cc, #00aaff);
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+    border-radius: 10px;
+    margin-top: 50px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 20px;
+    font-weight: 300;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Sección de Servicios */
+#servicios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#servicios h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+.servicio {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.servicio:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.servicio h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #333;
+}
+
+.servicio p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.servicio .precio {
+    font-size: 18px;
+    font-weight: bold;
+    color: #00aaff;
+}
+
+/* Sección de Reseñas */
+#reseñas {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+#reseñas h2 {
+    font-size: 36px;
+    color: #333;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.reseña {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+}
+
+.reseña:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.reseña p {
+    font-size: 16px;
+    color: #666;
+    font-style: italic;
+}
+
+.reseña span {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 60px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    margin-right: 20px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #00aaff;
+}

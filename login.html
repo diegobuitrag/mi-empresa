@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión - Mi Empresa</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Fondo de la página -->
+    <div class="background"></div>
+
+    <!-- Contenedor de formulario -->
+    <div class="container">
+        <h2>Iniciar sesión</h2>
+        
+        <form id="loginForm">
+            <input type="email" id="correoLogin" placeholder="Correo electrónico" required>
+            <input type="password" id="contrasenaLogin" placeholder="Contraseña" required>
+            <button type="submit">Iniciar sesión</button>
+        </form>
+
+        <p class="message" id="mensajeLogin"></p>
+        <a href="registro.html">¿No tienes cuenta? Regístrate aquí</a>
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
+</html>
